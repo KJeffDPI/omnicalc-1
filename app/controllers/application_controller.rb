@@ -26,4 +26,10 @@ class ApplicationController < ActionController::Base
 
     render({ :template => "calculation_templates/rand_results.html.erb" })
   end
+
+  def blank_square_root
+
+    render({ :template => "calculation_templates/square_root_form.html.erb" })
+  end
+
 end
