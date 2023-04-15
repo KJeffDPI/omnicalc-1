@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   def calculate_square
     # params = {"entry=42"}
 
-    @num = params.fetch("entry").to_i
+    @num = params.fetch("entry").to_f
 
     @square_of_num = @num ** 2
 
